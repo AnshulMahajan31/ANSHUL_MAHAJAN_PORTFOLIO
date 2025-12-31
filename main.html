@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="intro" class="intro">
+        <div class="intro-bg"></div>
+        <div class="intro-particles">
+            <span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span>
+            <span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span>
+            <span class="p"></span><span class="p"></span>
+        </div>
+        <div class="intro-content">
+            <h1 class="intro-title gradient-text"><span class="intro-type">Welcome to <span class="intro-logo-phrase">My Portfolio</span></span></h1>
+        </div>
+        
+        <!-- Intro Avatar -->
+        <div id="intro-avatar" class="intro-avatar-container visible">
+            <div class="robot-container">
+                <div class="robot-head">
+                    <div class="robot-antenna"></div>
+                    <div class="robot-ear left"></div>
+                    <div class="robot-ear right"></div>
+                    <div class="robot-face">
+                        <div class="robot-eye left"></div>
+                        <div class="robot-eye right"></div>
+                        <div class="robot-mouth"></div>
+                    </div>
+                    <div class="robot-neck"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section -->
+
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo gradient-text">My Portfolio</div>
+                <!-- From Uiverse.io by Admin12121 -->
+                <div class="menu">
+                    <a href="#home" class="link">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <path d="M213.3815,109.61945,133.376,36.88436a8,8,0,0,0-10.76339.00036l-79.9945,72.73477A8,8,0,0,0,40,115.53855V208a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V115.53887A8,8,0,0,0,213.3815,109.61945Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                            </svg>
+                        </span>
+                        <span class="link-title">Home</span>
+                    </a>
+                    <a href="#about" class="link">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <circle cx="128" cy="96" r="64" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="16"></circle>
+                                <path d="M30.989,215.99064a112.03731,112.03731,0,0,1,194.02311.002" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                            </svg>
+                        </span>
+                        <span class="link-title">About</span>
+                    </a>
+                    <a href="#education" class="link">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <polygon points="8 96 128 32 248 96 128 160 8 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polygon>
+                                <polyline points="188 128 188 200 128 232 68 200 68 128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                            </svg>
+                        </span>
+                        <span class="link-title">Education</span>
+                    </a>
+                    <a href="#skills" class="link">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <polyline points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                                <line x1="100" y1="156" x2="160" y2="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                <path d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                            </svg>
+                        </span>
+                        <span class="link-title">Skills</span>
+                    </a>
+                    <a href="#projects" class="link">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <rect x="32" y="48" width="192" height="160" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
+                                <line x1="32" y1="112" x2="224" y2="112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                            </svg>
+                        </span>
+                        <span class="link-title">Projects</span>
+                    </a>
+                    <a href="#contact" class="link">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <path d="M45.42853,176.99811A95.95978,95.95978,0,1,1,79.00228,210.5717l.00023-.001L45.84594,220.044a8,8,0,0,1-9.89-9.89l9.47331-33.15657Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                                <line x1="96" y1="112" x2="160" y2="112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                <line x1="96" y1="144" x2="160" y2="144" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                            </svg>
+                        </span>
+                        <span class="link-title">Contact</span>
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Anshul Mahajan</span></h1>
+                <h2>Engineering Student & <span class="typing">Developer</span></h2>
+                <p>A passionate 2nd year engineering student specializing in Computer Science & more .</p>
+            </div>
+            <div class="hero-image">
+                <!-- You can add your image here -->
+                <div class="image-placeholder"><img src="D:\mobile share\WhatsApp Image 2025-11-01 at 23.57.34_59d2f7f6.jpg" alt="Anshul Mahajan portrait"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I’m Anshul Mahajan, a dedicated and curious Computer Engineering student currently in my second year at Smt. Kashibai Navale College of Engineering, Pune. I’m passionate about building intelligent systems and solving real-world problems through technology.</p>
+
+<p>My core interests revolve around Robotics, Embedded Systems, Circuit Design, and Programming. Over the past few years, I’ve developed multiple robotics projects—including line-following robots (PID-based) & obstacle-avoidance robots using platforms like Arduino , IR sensors, ultrasonic sensors, and various communication modules. I enjoy combining hardware and software to create projects that are efficient, reliable, and competitive.</p>
+
+<p>I’m skilled in C/C++, Python, Java, and HTML/CSS, and I actively work with tools such as Power BI, Git, Arduino IDE, and circuit design platforms. Recently, I've been focusing on improving my expertise in PCB design to build more compact and industry-ready electronic systems.</p>
+
+<p>I love exploring new technologies, understanding complex systems, and continuously challenging myself through competitions, hackathons, and hands-on learning. My goal is to become a versatile engineer capable of designing innovative, scalable, and impactful solutions.</p> 
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">Anshul Mahajan</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">mahajananshul100@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">University:</span>
+                            <span class="info-value">Smt. Kashibai Navle College Of Engineering,Pune</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Degree:</span>
+                            <span class="info-value">Bachelor of Engineering,Computer Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline horizontal">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>2010 - 2022</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="timeline-title">
+                                <h3>Primary &amp; Secondary Education</h3>
+                                <h4>Amrita Vidyalayam and Jr College, Pune</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Completed primary and secondary education.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>2022 - 2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="timeline-title">
+                                <h3>Junior College (HSC)</h3>
+                                <h4>Creative Public School and Junior College, Pune</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Completed Higher Secondary Certificate (HSC).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>2024 - Present</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-title">
+                                <h3>Bachelor of Engineering (Computer Science)</h3>
+                                <h4>Smt. Kashibai Navale College of Engineering, Pune</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Pursuing B.E. in Computer Science.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Programming</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CAD Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Circuit Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Data Analysis</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Software & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AutoCAD</span>
+                        <span class="skill-tag">SolidWorks</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Microsoft Office</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Critical Thinking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (Unified: Projects, Certificates, Achievements) -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects & Achievements</h2>
+            
+            <div class="projects-grid"></div>
+        </div>
+    </section>
+
+    
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>mahajananshul100@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 9850566582</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Pune, India</p>
+                        </div>
+                    </div>
+
+        
+            </div>
+        </div>
+
+</div>
+
+<div class="social-buttons-container">
+  <div class="light-button">
+    <a href="https://www.linkedin.com/in/anshul-mahajan-2b614332a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+      <button class="bt">
+        <div class="light-holder">
+          <div class="light"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="button-holder">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.25c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.25h-3v-5.5c0-1.381-.112-2.623-2-2.623-1.887 0-2.171 1.146-2.171 2.537v5.586h-3v-11h2.842v1.522h.034c.396-.745 1.35-1.522 2.807-1.522 3.034 0 3.621 1.988 3.621 4.577v6.423z"
+            ></path>
+          </svg>
+          <p>LinkedIn</p>
+        </div>
+      </button>
+    </a>
+  </div>
+
+  <div class="light-button">
+    <a href="https://github.com/AnshulMahajan31" target="_blank" rel="noopener noreferrer">
+      <button class="bt">
+        <div class="light-holder">
+          <div class="light"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="button-holder">
+          <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"></path>
+          </svg>
+          <p>GitHub</p>
+        </div>
+      </button>
+    </a>
+  </div>
+
+  <div class="light-button">
+    <a href="https://www.instagram.com/_its_ansh_u_l_" target="_blank" rel="noopener noreferrer">
+      <button class="bt">
+        <div class="light-holder">
+          <div class="light"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="button-holder">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          <p>Instagram</p>
+        </div>
+      </button>
+    </a>
+  </div>
+
+  <div class="light-button">
+    <a href="https://discord.gg/sEv9WvBV" target="_blank" rel="noopener noreferrer">
+      <button class="bt">
+        <div class="light-holder">
+          <div class="light"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="button-holder">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+          </svg>
+          <p>Discord</p>
+        </div>
+      </button>
+    </a>
+  </div>
+
+  <div class="light-button">
+    <a href="https://wa.me/9850566582" target="_blank" rel="noopener noreferrer">
+      <button class="bt">
+        <div class="light-holder">
+          <div class="light"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="button-holder">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          <p>WhatsApp</p>
+        </div>
+      </button>
+    </a>
+  </div>
+
+</div>
+
+</section>
+
+    <!-- AI Assistant (Abby) -->
+    <div id="ai-assistant" class="ai-assistant" style="opacity: 0; transition: opacity 0.5s;">
+        <div class="robot-container">
+            <div class="robot-head">
+                <div class="robot-antenna"></div>
+                <div class="robot-ear left"></div>
+                <div class="robot-ear right"></div>
+                <div class="robot-face">
+                    <div class="robot-eye left"></div>
+                    <div class="robot-eye right"></div>
+                    <div class="robot-mouth"></div>
+                </div>
+                <div class="robot-neck"></div>
+            </div>
+        </div>
+        <div class="ai-greeting">👋 Hello! I'm Abby, your personal guide.</div>
+        <div class="ai-settings-btn" title="Admin Settings (Ctrl+Shift+A)">⚙️</div>
+    </div>
+
+    <!-- AI Chat Interface -->
+    <div id="ai-chat" class="ai-chat" style="display: none;">
+        <div class="ai-chat-header">
+            <div class="ai-chat-title">
+                <div class="ai-avatar-small">
+                    <div class="robot-container" style="transform: scale(0.5); transform-origin: center;">
+                        <div class="robot-head">
+                            <div class="robot-antenna"></div>
+                            <div class="robot-ear left"></div>
+                            <div class="robot-ear right"></div>
+                            <div class="robot-face">
+                                <div class="robot-eye left"></div>
+                                <div class="robot-eye right"></div>
+                                <div class="robot-mouth"></div>
+                            </div>
+                            <div class="robot-neck"></div>
+                        </div>
+                    </div>
+                </div>
+                <span class="gradient-text" style="font-weight: 700;">My Portfolio</span>
+            </div>
+            <button class="ai-chat-close">✕</button>
+        </div>
+        <div class="ai-chat-messages" id="ai-chat-messages">
+            <div class="ai-message ai-message-bot">
+                <div class="ai-message-content">Hi! I'm your Portfolio Assistant 👋 How can I help you explore Anshul's portfolio today?</div>
+            </div>
+        </div>
+        <div class="ai-chat-quick-replies">
+            <button class="ai-quick-reply" data-reply="about">Tell me about Anshul</button>
+            <button class="ai-quick-reply" data-reply="skills">What are his skills?</button>
+            <button class="ai-quick-reply" data-reply="projects">Show me projects</button>
+            <button class="ai-quick-reply" data-reply="contact">Contact info</button>
+            <button class="ai-quick-reply" data-reply="birthdate">What is his birthdate?</button>
+        </div>
+        <div class="ai-chat-input">
+            <input type="text" id="ai-input" placeholder="Ask me anything..." />
+            <button id="ai-send-btn" aria-label="Send message">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- AI Assistant Settings Panel (Admin Only) -->
+    <div id="ai-settings-panel" class="ai-settings-panel" style="display: none;">
+        <div class="ai-settings-header">
+            <h3>Admin Control Panel</h3>
+            <div class="header-controls">
+                <button class="ai-minimize-btn" title="Minimize">−</button>
+                <button class="ai-maximize-btn" title="Maximize" style="display: none;">□</button>
+                <button class="ai-settings-close">✕</button>
+            </div>
+        </div>
+        <div class="ai-settings-content">
+            <div id="admin-login" class="admin-login">
+                <h4>Enter Admin Password</h4>
+                <input type="password" id="admin-password" placeholder="Enter password..." />
+                <button id="admin-login-btn" class="admin-login-btn">Access Admin Mode</button>
+                <p id="login-error" class="login-error" style="display: none;">Incorrect password!</p>
+            </div>
+            <div id="admin-options" class="admin-options" style="display: none;">
+                <h4>✅ Admin Mode Activated</h4>
+                
+                <!-- Navigation Tabs -->
+                <div class="admin-tabs">
+                    <button class="admin-tab active" data-tab="personal">👤 Personal Info</button>
+                    <button class="admin-tab" data-tab="settings">⚙️ Settings</button>
+                </div>
+                
+                <!-- Personal Info Tab -->
+                <div class="admin-tab-content active" id="tab-personal">
+                    <div class="admin-option-group">
+                        <h5>📝 Personal Information</h5>
+                        <label>
+                            Full Name:
+                            <input type="text" id="user-name" placeholder="Anshul Mahajan" />
+                        </label>
+                        <label>
+                            Birth Date:
+                            <input type="date" id="user-birthdate" />
+                        </label>
+                        <label>
+                            Email:
+                            <input type="email" id="user-email" placeholder="mahajananshul100@gmail.com" />
+                        </label>
+                        <label>
+                            Phone:
+                            <input type="tel" id="user-phone" placeholder="+91 XXXXX XXXXX" />
+                        </label>
+                    </div>
+                    
+                    <div class="admin-option-group">
+                        <h5>👤 About Me</h5>
+                        <textarea id="about-me" rows="4" placeholder="Write a detailed paragraph about yourself, your interests, hobbies, achievements, goals, personality, etc. Abby will use this information to answer questions about you..."></textarea>
+                    </div>
+                    
+                    <div class="admin-option-group">
+                        <h5>🎯 Professional Info</h5>
+                        <label>
+                            Current Position/Year:
+                            <input type="text" id="user-position" placeholder="2nd Year Computer Science Student" />
+                        </label>
+                        <label>
+                            University/College:
+                            <input type="text" id="user-university" placeholder="Smt. Kashibai Navle College of Engineering, Pune" />
+                        </label>
+                        <label>
+                            Hobbies:
+                            <input type="text" id="user-hobbies" placeholder="Coding, Gaming, Reading" />
+                        </label>
+                        <label>
+                            Favorite Quote:
+                            <input type="text" id="user-quote" placeholder="Your favorite motivational quote" />
+                        </label>
+                    </div>
+                </div>
+                
+                
+                
+                
+
+                <!-- Settings Tab -->
+                <div class="admin-tab-content" id="tab-settings">
+                    <div class="admin-option-group">
+                        <h5>⚙️ AI Assistant Settings</h5>
+                        <label>
+                            <input type="checkbox" id="ai-enabled" checked />
+                            Enable AI Assistant
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ai-greeting" checked />
+                            Show Greeting Message
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ai-jokes" checked />
+                            Enable Jokes & Fun Responses
+                        </label>
+                    </div>
+                    
+                    <div class="admin-option-group">
+                        <h5>💬 Chat Configuration</h5>
+                        <label>
+                            Quick Replies:
+                            <input type="checkbox" id="quick-replies" checked />
+                        </label>
+                        <label>
+                            Auto-scroll to sections:
+                            <input type="checkbox" id="auto-scroll" checked />
+                        </label>
+                        <label>
+                            Response Style:
+                            <select id="response-style">
+                                <option value="friendly">Friendly & Casual</option>
+                                <option value="professional" selected>Professional</option>
+                                <option value="funny">Funny & Playful</option>
+                            </select>
+                        </label>
+                    </div>
+                    
+                    <div class="admin-option-group">
+                        <h5>🎭 Appearance</h5>
+                        <label>
+                            Animation Speed:
+                            <select id="animation-speed">
+                                <option value="slow">Slow</option>
+                                <option value="normal" selected>Normal</option>
+                                <option value="fast">Fast</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                
+                <button id="save-settings-btn" class="save-settings-btn">💾 Save All Changes</button>
+                <button id="logout-btn" class="logout-btn">🚪 Logout</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Minimized Admin Panel -->
+    <div id="admin-minimized" class="admin-minimized" style="display: none;">
+        <span>Admin Panel</span>
+        <button class="restore-btn">□</button>
+    </div>
+
+    <script>
+    (function(){
+        var intro = document.getElementById('intro');
+        if(!intro) return;
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var totalMs = 5000;
+        function hideIntro(){
+            intro.classList.add('intro-out');
+            setTimeout(function(){ intro.style.display = 'none'; }, 200);
+        }
+        function start(){
+            totalMs = 5000;
+            intro.classList.add('intro-play');
+            
+            // Elements
+            var introAvatar = document.getElementById('intro-avatar');
+            var finalAvatar = document.getElementById('ai-assistant');
+            
+            setTimeout(function(){
+                if(reduce){ 
+                    if(finalAvatar) finalAvatar.style.opacity = '1';
+                    hideIntro(); 
+                    return; 
+                }
+                var phrase = intro.querySelector('.intro-logo-phrase');
+                var target = document.querySelector('.logo.gradient-text');
+
+                if(!phrase || !target){ 
+                    if(finalAvatar) finalAvatar.style.opacity = '1';
+                    hideIntro(); 
+                    return; 
+                }
+                
+                // --- Text Clone ---
+                var rect = phrase.getBoundingClientRect();
+                var targetRect = target.getBoundingClientRect();
+                var clone = document.createElement('span');
+                clone.textContent = phrase.textContent;
+                var s = clone.style;
+                s.position = 'fixed';
+                s.left = rect.left + 'px';
+                s.top = rect.top + 'px';
+                s.zIndex = '3000';
+                var cs = getComputedStyle(phrase);
+                s.fontSize = cs.fontSize;
+                s.fontFamily = cs.fontFamily;
+                s.fontWeight = '700';
+                s.lineHeight = '1';
+                clone.className = 'gradient-text intro-fly-clone';
+                s.transition = 'transform 700ms cubic-bezier(0.4, 0, 0.2, 1), opacity 500ms';
+                s.transformOrigin = 'left top';
+                s.transform = 'translate(0,0) scale(1)';
+                document.body.appendChild(clone);
+
+                // --- Avatar Clone ---
+                var avatarClone = null;
+                if(introAvatar && finalAvatar) {
+                    avatarClone = introAvatar.cloneNode(true);
+                    avatarClone.id = 'intro-avatar-clone';
+                    avatarClone.className = 'intro-avatar-container visible avatar-fly-clone';
+                    var as = avatarClone.style;
+                    as.position = 'fixed';
+                    // Match initial CSS position
+                    as.left = '50%';
+                    as.top = '65%';
+                    as.zIndex = '10002';
+                    as.transition = 'all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+                    as.transform = 'translate(-50%, -50%) scale(2)';
+                    document.body.appendChild(avatarClone);
+                    
+                    // Hide original avatar to avoid duplication during animation
+                    introAvatar.style.opacity = '0';
+                }
+
+                void clone.offsetWidth; // Force reflow
+                
+                // Trigger Animations
+                requestAnimationFrame(function(){
+                    // Text Animation
+                    var dx = targetRect.left - rect.left;
+                    var dy = targetRect.top - rect.top;
+                    var targetCs = getComputedStyle(target);
+                    var srcSize = parseFloat(cs.fontSize);
+                    var tgtSize = parseFloat(targetCs.fontSize);
+                    var scale = (tgtSize && srcSize) ? (tgtSize / srcSize) : 1;
+                    s.transform = 'translate(' + dx + 'px,' + dy + 'px) scale(' + scale.toFixed(3) + ')';
+                    s.opacity = '0.9';
+
+                    // Avatar Animation
+                    if(avatarClone && finalAvatar) {
+                        var finalRect = finalAvatar.getBoundingClientRect();
+                        var centerX = finalRect.left + finalRect.width / 2;
+                        var centerY = finalRect.top + finalRect.height / 2;
+                        
+                        as.left = centerX + 'px';
+                        as.top = centerY + 'px';
+                        as.transform = 'translate(-50%, -50%) scale(1)';
+                    }
+                });
+
+                clone.addEventListener('transitionend', function(){
+                    if(target){
+                        target.classList.add('flash');
+                        setTimeout(function(){ target.classList.remove('flash'); }, 900);
+                    }
+                    if(clone.parentNode) document.body.removeChild(clone);
+                    hideIntro();
+                }, { once: true });
+
+                // Avatar Transition End
+                if(avatarClone) {
+                    avatarClone.addEventListener('transitionend', function(){
+                        if(finalAvatar) finalAvatar.style.opacity = '1';
+                        if(avatarClone && avatarClone.parentNode) document.body.removeChild(avatarClone);
+                    }, { once: true });
+                } else {
+                    if(finalAvatar) finalAvatar.style.opacity = '1';
+                }
+            }, totalMs);
+        }
+        
+        if(document.readyState === 'loading'){
+            document.addEventListener('DOMContentLoaded', start);
+        } else {
+            start();
+        }
+        })();
+    (function(){
+        var header = document.querySelector('header');
+        if(!header) return;
+        function updateHeader(){
+            var h = location.hash || '#home';
+            var compact = (h !== '#home') || (window.scrollY > 10);
+            header.classList.toggle('compact', compact);
+        }
+        window.addEventListener('hashchange', updateHeader);
+        window.addEventListener('scroll', updateHeader, { passive: true });
+        document.querySelectorAll('a[href^="#"]').forEach(function(a){
+            a.addEventListener('click', function(){ setTimeout(updateHeader, 0); });
+        });
+        updateHeader();
+    })();
+    </script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
