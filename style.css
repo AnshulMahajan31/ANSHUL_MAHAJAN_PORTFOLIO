@@ -3121,7 +3121,7 @@ footer {
     max-height: 85vh;
     border: 1px solid rgba(59, 130, 246, 0.3);
     overflow: hidden;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 

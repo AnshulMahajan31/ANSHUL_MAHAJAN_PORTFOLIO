@@ -312,7 +312,7 @@ function initAIAssistant() {
     if (settingsBtn) {
         settingsBtn.addEventListener('click', function(e) {
             e.stopPropagation();
-            settingsPanel.style.display = 'block';
+            settingsPanel.style.display = 'flex';
             showLoginScreen();
         });
     }
@@ -321,7 +321,7 @@ function initAIAssistant() {
     document.addEventListener('keydown', function(e) {
         if (e.ctrlKey && e.shiftKey && e.key === 'A') {
             e.preventDefault();
-            settingsPanel.style.display = 'block';
+            settingsPanel.style.display = 'flex';
             showLoginScreen();
         }
     });
@@ -1040,7 +1040,7 @@ function renderCertificatesFromData() {
         const imgWrap = document.createElement('div');
         imgWrap.className = 'project-img';
         const img = document.createElement('img');
-        img.src = (c.image || (window.PORTFOLIO_DATA && window.PORTFOLIO_DATA.images && window.PORTFOLIO_DATA.images.projectPlaceholder)) || '../images/project-placeholder.jpg';
+        img.src = (c.image || (window.PORTFOLIO_DATA && window.PORTFOLIO_DATA.images && window.PORTFOLIO_DATA.images.projectPlaceholder)) || 'images/project-placeholder.jpg';
         img.alt = c.title || 'Certificate';
         imgWrap.appendChild(img);
         card.appendChild(imgWrap);

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .error-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            line-height: 1;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            margin: 20px 0 40px;
+            color: var(--text-color);
+        }
+        .home-btn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-bg"></div>
+    <div class="intro-particles">
+        <span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span>
+        <span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span>
+        <span class="p"></span><span class="p"></span>
+    </div>
+
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Oops! The page you're looking for has vanished into the void.</p>
+        <a href="main.html" class="home-btn">Return Home</a>
+    </div>
+
+    <script src="data.js"></script>
+    <!-- Basic script to handle theme if needed, reusing parts of script.js logic minimal -->
+    <script>
+        // Ensure particles work
+        document.addEventListener('DOMContentLoaded', () => {
+            const particles = document.querySelectorAll('.p');
+            particles.forEach(p => {
+                p.style.left = Math.random() * 100 + '%';
+                p.style.top = Math.random() * 100 + '%';
+                p.style.animationDuration = (Math.random() * 20 + 10) + 's';
+                p.style.animationDelay = (Math.random() * 5) + 's';
+            });
+        });
+    </script>
+</body>
+</html>

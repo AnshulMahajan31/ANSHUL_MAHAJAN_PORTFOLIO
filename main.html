@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Analytics (Replace G-XXXXXXXXXX with your actual Measurement ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
     <div id="intro" class="intro">
@@ -127,7 +137,7 @@
             </div>
             <div class="hero-image">
                 <!-- You can add your image here -->
-                <div class="image-placeholder"><img src="D:\mobile share\WhatsApp Image 2025-11-01 at 23.57.34_59d2f7f6.jpg" alt="Anshul Mahajan portrait"></div>
+                <div class="image-placeholder"><img src="images/my photo.jpeg" alt="Anshul Mahajan portrait"></div>
             </div>
         </div>
     </section>
@@ -447,211 +457,7 @@
 
 </section>
 
-    <!-- AI Assistant (Abby) -->
-    <div id="ai-assistant" class="ai-assistant" style="opacity: 0; transition: opacity 0.5s;">
-        <div class="robot-container">
-            <div class="robot-head">
-                <div class="robot-antenna"></div>
-                <div class="robot-ear left"></div>
-                <div class="robot-ear right"></div>
-                <div class="robot-face">
-                    <div class="robot-eye left"></div>
-                    <div class="robot-eye right"></div>
-                    <div class="robot-mouth"></div>
-                </div>
-                <div class="robot-neck"></div>
-            </div>
-        </div>
-        <div class="ai-greeting">👋 Hello! I'm Abby, your personal guide.</div>
-        <div class="ai-settings-btn" title="Admin Settings (Ctrl+Shift+A)">⚙️</div>
-    </div>
 
-    <!-- AI Chat Interface -->
-    <div id="ai-chat" class="ai-chat" style="display: none;">
-        <div class="ai-chat-header">
-            <div class="ai-chat-title">
-                <div class="ai-avatar-small">
-                    <div class="robot-container" style="transform: scale(0.5); transform-origin: center;">
-                        <div class="robot-head">
-                            <div class="robot-antenna"></div>
-                            <div class="robot-ear left"></div>
-                            <div class="robot-ear right"></div>
-                            <div class="robot-face">
-                                <div class="robot-eye left"></div>
-                                <div class="robot-eye right"></div>
-                                <div class="robot-mouth"></div>
-                            </div>
-                            <div class="robot-neck"></div>
-                        </div>
-                    </div>
-                </div>
-                <span class="gradient-text" style="font-weight: 700;">My Portfolio</span>
-            </div>
-            <button class="ai-chat-close">✕</button>
-        </div>
-        <div class="ai-chat-messages" id="ai-chat-messages">
-            <div class="ai-message ai-message-bot">
-                <div class="ai-message-content">Hi! I'm your Portfolio Assistant 👋 How can I help you explore Anshul's portfolio today?</div>
-            </div>
-        </div>
-        <div class="ai-chat-quick-replies">
-            <button class="ai-quick-reply" data-reply="about">Tell me about Anshul</button>
-            <button class="ai-quick-reply" data-reply="skills">What are his skills?</button>
-            <button class="ai-quick-reply" data-reply="projects">Show me projects</button>
-            <button class="ai-quick-reply" data-reply="contact">Contact info</button>
-            <button class="ai-quick-reply" data-reply="birthdate">What is his birthdate?</button>
-        </div>
-        <div class="ai-chat-input">
-            <input type="text" id="ai-input" placeholder="Ask me anything..." />
-            <button id="ai-send-btn" aria-label="Send message">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-
-    <!-- AI Assistant Settings Panel (Admin Only) -->
-    <div id="ai-settings-panel" class="ai-settings-panel" style="display: none;">
-        <div class="ai-settings-header">
-            <h3>Admin Control Panel</h3>
-            <div class="header-controls">
-                <button class="ai-minimize-btn" title="Minimize">−</button>
-                <button class="ai-maximize-btn" title="Maximize" style="display: none;">□</button>
-                <button class="ai-settings-close">✕</button>
-            </div>
-        </div>
-        <div class="ai-settings-content">
-            <div id="admin-login" class="admin-login">
-                <h4>Enter Admin Password</h4>
-                <input type="password" id="admin-password" placeholder="Enter password..." />
-                <button id="admin-login-btn" class="admin-login-btn">Access Admin Mode</button>
-                <p id="login-error" class="login-error" style="display: none;">Incorrect password!</p>
-            </div>
-            <div id="admin-options" class="admin-options" style="display: none;">
-                <h4>✅ Admin Mode Activated</h4>
-                
-                <!-- Navigation Tabs -->
-                <div class="admin-tabs">
-                    <button class="admin-tab active" data-tab="personal">👤 Personal Info</button>
-                    <button class="admin-tab" data-tab="settings">⚙️ Settings</button>
-                </div>
-                
-                <!-- Personal Info Tab -->
-                <div class="admin-tab-content active" id="tab-personal">
-                    <div class="admin-option-group">
-                        <h5>📝 Personal Information</h5>
-                        <label>
-                            Full Name:
-                            <input type="text" id="user-name" placeholder="Anshul Mahajan" />
-                        </label>
-                        <label>
-                            Birth Date:
-                            <input type="date" id="user-birthdate" />
-                        </label>
-                        <label>
-                            Email:
-                            <input type="email" id="user-email" placeholder="mahajananshul100@gmail.com" />
-                        </label>
-                        <label>
-                            Phone:
-                            <input type="tel" id="user-phone" placeholder="+91 XXXXX XXXXX" />
-                        </label>
-                    </div>
-                    
-                    <div class="admin-option-group">
-                        <h5>👤 About Me</h5>
-                        <textarea id="about-me" rows="4" placeholder="Write a detailed paragraph about yourself, your interests, hobbies, achievements, goals, personality, etc. Abby will use this information to answer questions about you..."></textarea>
-                    </div>
-                    
-                    <div class="admin-option-group">
-                        <h5>🎯 Professional Info</h5>
-                        <label>
-                            Current Position/Year:
-                            <input type="text" id="user-position" placeholder="2nd Year Computer Science Student" />
-                        </label>
-                        <label>
-                            University/College:
-                            <input type="text" id="user-university" placeholder="Smt. Kashibai Navle College of Engineering, Pune" />
-                        </label>
-                        <label>
-                            Hobbies:
-                            <input type="text" id="user-hobbies" placeholder="Coding, Gaming, Reading" />
-                        </label>
-                        <label>
-                            Favorite Quote:
-                            <input type="text" id="user-quote" placeholder="Your favorite motivational quote" />
-                        </label>
-                    </div>
-                </div>
-                
-                
-                
-                
-
-                <!-- Settings Tab -->
-                <div class="admin-tab-content" id="tab-settings">
-                    <div class="admin-option-group">
-                        <h5>⚙️ AI Assistant Settings</h5>
-                        <label>
-                            <input type="checkbox" id="ai-enabled" checked />
-                            Enable AI Assistant
-                        </label>
-                        <label>
-                            <input type="checkbox" id="ai-greeting" checked />
-                            Show Greeting Message
-                        </label>
-                        <label>
-                            <input type="checkbox" id="ai-jokes" checked />
-                            Enable Jokes & Fun Responses
-                        </label>
-                    </div>
-                    
-                    <div class="admin-option-group">
-                        <h5>💬 Chat Configuration</h5>
-                        <label>
-                            Quick Replies:
-                            <input type="checkbox" id="quick-replies" checked />
-                        </label>
-                        <label>
-                            Auto-scroll to sections:
-                            <input type="checkbox" id="auto-scroll" checked />
-                        </label>
-                        <label>
-                            Response Style:
-                            <select id="response-style">
-                                <option value="friendly">Friendly & Casual</option>
-                                <option value="professional" selected>Professional</option>
-                                <option value="funny">Funny & Playful</option>
-                            </select>
-                        </label>
-                    </div>
-                    
-                    <div class="admin-option-group">
-                        <h5>🎭 Appearance</h5>
-                        <label>
-                            Animation Speed:
-                            <select id="animation-speed">
-                                <option value="slow">Slow</option>
-                                <option value="normal" selected>Normal</option>
-                                <option value="fast">Fast</option>
-                            </select>
-                        </label>
-                    </div>
-                </div>
-                
-                <button id="save-settings-btn" class="save-settings-btn">💾 Save All Changes</button>
-                <button id="logout-btn" class="logout-btn">🚪 Logout</button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Minimized Admin Panel -->
-    <div id="admin-minimized" class="admin-minimized" style="display: none;">
-        <span>Admin Panel</span>
-        <button class="restore-btn">□</button>
-    </div>
 
     <script>
     (function(){
@@ -798,5 +604,160 @@
     </script>
     <script src="data.js"></script>
     <script src="script.js"></script>
+    
+    <!-- AI Assistant (Abby) - Robot Avatar -->
+    <div id="ai-assistant" class="ai-assistant">
+        <div class="robot-container">
+            <div class="robot-head">
+                <div class="robot-antenna"></div>
+                <div class="robot-ear left"></div>
+                <div class="robot-ear right"></div>
+                <div class="robot-face">
+                    <div class="robot-eye left"></div>
+                    <div class="robot-eye right"></div>
+                    <div class="robot-mouth"></div>
+                </div>
+                <div class="robot-neck"></div>
+            </div>
+        </div>
+        
+        <!-- AI Greeting -->
+        <div class="ai-greeting">👋 Hello! I'm Abby, your personal guide.</div>
+        
+        <!-- AI Quick Actions -->
+        <div class="ai-quick-actions">
+            <button class="ai-action-btn" data-action="about">About</button>
+            <button class="ai-action-btn" data-action="skills">Skills</button>
+            <button class="ai-action-btn" data-action="education">Education</button>
+            <button class="ai-action-btn" data-action="contact">Contact</button>
+            <button class="ai-action-btn" data-action="social">Social Media</button>
+        </div>
+        
+        <!-- AI Settings Button (Visible on hover) -->
+        <div class="ai-settings-btn">
+            <i class="fas fa-cog"></i>
+        </div>
+    </div>
+    
+    <!-- AI Chat Interface -->
+    <div id="ai-chat" class="ai-chat" style="display: none;">
+        <div class="ai-chat-header">
+            <div class="ai-chat-title">
+                <div class="ai-avatar-small">
+                    <div class="robot-container" style="transform: scale(0.8);">
+                        <div class="robot-head">
+                            <div class="robot-antenna"></div>
+                            <div class="robot-ear left"></div>
+                            <div class="robot-ear right"></div>
+                            <div class="robot-face">
+                                <div class="robot-eye left"></div>
+                                <div class="robot-eye right"></div>
+                                <div class="robot-mouth"></div>
+                            </div>
+                            <div class="robot-neck"></div>
+                        </div>
+                    </div>
+                </div>
+                Abby - AI Assistant
+            </div>
+            <button class="ai-chat-close">✕</button>
+        </div>
+        <div class="ai-chat-messages" id="ai-chat-messages">
+            <div class="ai-message ai-message-bot">
+                <div class="ai-message-content">👋 Hello! I'm Abby, your personal guide. How can I help you today?</div>
+            </div>
+        </div>
+        <div class="ai-chat-quick-replies">
+            <span class="ai-quick-reply" data-reply="about">About</span>
+            <span class="ai-quick-reply" data-reply="skills">Skills</span>
+            <span class="ai-quick-reply" data-reply="projects">Projects</span>
+            <span class="ai-quick-reply" data-reply="contact">Contact</span>
+        </div>
+        <div class="ai-chat-input">
+            <input type="text" id="ai-input" placeholder="Type your message here...">
+            <button id="ai-send-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <!-- AI Settings Panel -->
+    <div id="ai-settings-panel" class="ai-settings-panel">
+        <div class="ai-settings-header">
+            <h3>Abby - Admin Panel</h3>
+            <div class="header-controls">
+                <button class="ai-minimize-btn">−</button>
+                <button class="ai-settings-close">✕</button>
+            </div>
+        </div>
+        <div class="ai-settings-content">
+            <div id="admin-login" class="admin-login">
+                <h4>Admin Access</h4>
+                <input type="password" id="admin-password" placeholder="Enter admin password">
+                <button id="admin-login-btn" class="admin-login-btn">Login</button>
+                <div id="login-error" class="login-error" style="display: none;">Incorrect password. Try 'Ragno@3103'</div>
+            </div>
+            <div id="admin-options" class="admin-options" style="display: none;">
+                <div class="admin-tabs">
+                    <button class="admin-tab active" data-tab="personal">Personal Info</button>
+                    <button class="admin-tab" data-tab="ai-settings">AI Settings</button>
+                    <button class="admin-tab" data-tab="content">Content</button>
+                </div>
+                <div id="tab-personal" class="admin-tab-content active">
+                    <div class="admin-option-group">
+                        <label>Name:<input type="text" id="user-name" placeholder="Full name"></label>
+                        <label>Birthdate:<input type="date" id="user-birthdate"></label>
+                        <label>Email:<input type="email" id="user-email" placeholder="Email address"></label>
+                        <label>Phone:<input type="tel" id="user-phone" placeholder="Phone number"></label>
+                        <label>Position:<input type="text" id="user-position" placeholder="Current position"></label>
+                        <label>University:<input type="text" id="user-university" placeholder="University name"></label>
+                        <label>About Me:<textarea id="about-me" placeholder="A brief description about yourself"></textarea></label>
+                        <label>Skills:<input type="text" id="user-skills" placeholder="Comma-separated skills"></label>
+                        <label>Hobbies:<input type="text" id="user-hobbies" placeholder="Your hobbies"></label>
+                        <label>Favorite Quote:<textarea id="user-quote" placeholder="Your favorite quote"></textarea></label>
+                    </div>
+                </div>
+                <div id="tab-ai-settings" class="admin-tab-content">
+                    <div class="admin-option-group">
+                        <label><input type="checkbox" id="ai-enabled" checked> Enable AI Assistant</label>
+                        <label><input type="checkbox" id="ai-greeting" checked> Show Greeting</label>
+                        <label><input type="checkbox" id="ai-jokes" checked> Enable Jokes</label>
+                        <label><input type="checkbox" id="quick-replies" checked> Show Quick Replies</label>
+                        <label><input type="checkbox" id="auto-scroll" checked> Auto Scroll Messages</label>
+                        <label>Response Style:<select id="response-style"><option value="friendly">Friendly</option><option value="professional">Professional</option><option value="fun">Fun</option></select></label>
+                        <label>Animation Speed:<select id="animation-speed"><option value="normal">Normal</option><option value="fast">Fast</option><option value="slow">Slow</option></select></label>
+                    </div>
+                </div>
+                <div id="tab-content" class="admin-tab-content">
+                    <div class="admin-option-group">
+                        <h5>Certificates</h5>
+                        <button class="add-item-btn">Add Certificate</button>
+                        <div id="certificates-list" class="items-list"></div>
+                    </div>
+                    <div class="admin-option-group">
+                        <h5>Skills</h5>
+                        <button class="add-item-btn">Add Skill</button>
+                        <div id="skills-list" class="items-list"></div>
+                    </div>
+                    <div class="admin-option-group">
+                        <h5>Projects</h5>
+                        <button class="add-item-btn">Add Project</button>
+                        <div id="projects-list" class="items-list"></div>
+                    </div>
+                </div>
+                <button id="save-settings-btn" class="save-settings-btn">Save Settings</button>
+                <button id="logout-btn" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Minimized Admin Panel (shown when admin panel is minimized) -->
+    <div id="admin-minimized" class="admin-minimized" style="display: none;">
+        <span>Admin Panel</span>
+        <button class="restore-btn">+</button>
+    </div>
 </body>
 </html>

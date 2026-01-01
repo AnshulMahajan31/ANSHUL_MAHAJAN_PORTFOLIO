@@ -1,5 +1,5 @@
 // Simple data file: edit this to add images, skills, and certificates
-// Paths typically look like '../images/your-file.jpg' relative to html/main.html
+// Paths typically look like 'images/your-file.jpg' relative to main.html
 
 window.PORTFOLIO_DATA = {
   // Central place to reference images used across the site
@@ -16,8 +16,8 @@ window.PORTFOLIO_DATA = {
     deloitteCyber: 'images/deloitte-cyber.jpeg',
     awsForage: 'images/aws-forage.jpeg'
     // Add your own images below, then reference by path in certificates/projects
-    // example1: '../images/line-follower.jpg',
-    // example2: '../images/obstacle-avoidance.jpg'
+    // example1: 'images/line-follower.jpg',
+    // example2: 'images/obstacle-avoidance.jpg'
   },
 
   // Skills organized by categories. Use either 'bars' (with level 0-100) or 'tags'.
