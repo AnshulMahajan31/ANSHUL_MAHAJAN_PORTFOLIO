@@ -39,10 +39,10 @@ We recommend **Vercel** or **Netlify** for hosting this static site. These platf
     - Follow the DNS configuration instructions (CNAME/A records) provided by Vercel.
 
 ## 4. Configuration Files
-- **`vercel.json`**: Controls headers (security, caching) and rewrites.
+- **`vercel.json`**: Controls headers (security, caching).
 - **`robots.txt`**: Instructions for search engine crawlers.
 - **`404.html`**: Custom error page.
-- **`main.html`**: The entry point (rewritten from `/` in `vercel.json`).
+- **`index.html`**: The main entry point.
 
 ## 5. Security Features
 The included `vercel.json` enforces strict security policies:

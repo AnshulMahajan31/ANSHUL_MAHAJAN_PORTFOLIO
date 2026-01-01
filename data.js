@@ -1,5 +1,5 @@
 // Simple data file: edit this to add images, skills, and certificates
-// Paths typically look like 'images/your-file.jpg' relative to main.html
+// Paths typically look like 'images/your-file.jpg' relative to index.html
 
 window.PORTFOLIO_DATA = {
   // Central place to reference images used across the site
